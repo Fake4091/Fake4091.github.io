@@ -1,6 +1,9 @@
 body {
   background-color: #eff1f5;
   color: #4c4f69;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -47,11 +50,72 @@ nav a:visited:hover {
   color: #7287fd;
 }
 
+nav a h4 {
+  color: #dc8a78;
+}
+
+nav a:link h4 {
+  color: #dc8a78;
+}
+
+nav a:hover h4 {
+  color: #dc8a78;
+}
+
+nav a:visited h4 {
+  color: #dc8a78;
+}
+
+nav a:visited:hover h4 {
+  color: #dc8a78;
+}
+
+footer {
+  background-color: #9ca0b0;
+  height: 10vh;
+  overflow: hidden;
+  width: 100vw;
+  position: relative;
+  left: -1vw;
+  bottom: -2vh;
+  text-align: center;
+  z-index: 90000;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer a {
+  padding-top: 3vh;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+footer a:link {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer a:visited {
+  color: #ffffff;
+}
+
+footer a:visited:hover {
+  color: #ffffff;
+}
+
+footer img {
+  height: 4vh;
+}
+
 .header {
   padding-top: 3vh;
   overflow: hidden;
   width: 100vw;
   position: relative;
+  top: -5px;
   left: -8px;
   text-align: center;
   background-color: #9ca0b0;
@@ -66,10 +130,44 @@ nav a:visited:hover {
   font-style: italic;
 }
 
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.frame {
+  border: 3px solid #7c7f93;
+  background: #9ca0b0;
+  margin: auto;
+  padding: 15px 10px;
+  width: 26vw;
+  display: flex;
+}
+
+.me-pic {
+  width: 25vw;
+  margin: auto;
+}
+
 .about {
   text-align: center;
   background-color: #7c7f93;
   padding: 0.5vh 2vw;
-  margin: 5vh;
+  margin: 5vh 10vw;
   color: #eff1f5;
+}
+
+.skill-container {
+  border: 3px solid #7c7f93;
+  background: #9ca0b0;
+  margin: auto;
+  padding: 15px 10px;
+  width: 26vw;
+  display: flex;
+}
+
+.skill-contianer img {
+  width: 5vw;
 }
