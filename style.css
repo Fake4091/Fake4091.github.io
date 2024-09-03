@@ -74,7 +74,7 @@ footer {
   background-color: #9ca0b0;
   height: 10vh;
   overflow: hidden;
-  width: 100vw;
+  width: 101vw;
   position: relative;
   left: -1vw;
   bottom: -2vh;
@@ -113,12 +113,13 @@ footer img {
 .header {
   padding-top: 3vh;
   overflow: hidden;
-  width: 100vw;
+  width: 101vw;
   position: relative;
   top: -5px;
   left: -8px;
   text-align: center;
   background-color: #9ca0b0;
+  margin-bottom: 2vh;
 }
 
 .header h1 {
@@ -153,7 +154,8 @@ footer img {
 
 .about {
   text-align: center;
-  background-color: #7c7f93;
+  border: 3px solid #7c7f93;
+  background: #9ca0b0;
   padding: 0.5vh 2vw;
   margin: 5vh 10vw;
   color: #eff1f5;
@@ -163,8 +165,11 @@ footer img {
   border: 3px solid #7c7f93;
   background: #9ca0b0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 5vh 5vw;
+  align-self: center;
 }
 
 .skill-container img {
@@ -172,6 +177,7 @@ footer img {
   padding: 1vh 1vw;
 }
 
-.skill-body {
-  overflow-y: hidden;
+.lang-container {
+  align-self: center;
+  text-align: center;
 }
