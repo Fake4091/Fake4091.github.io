@@ -162,12 +162,16 @@ footer img {
 .skill-container {
   border: 3px solid #7c7f93;
   background: #9ca0b0;
-  margin: auto;
-  padding: 15px 10px;
-  width: 26vw;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.skill-contianer img {
-  width: 5vw;
+.skill-container img {
+  width: 15vw;
+  padding: 1vh 1vw;
+}
+
+.skill-body {
+  overflow-y: hidden;
 }
