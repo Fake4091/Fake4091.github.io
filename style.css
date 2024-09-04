@@ -181,3 +181,32 @@ footer img {
   align-self: center;
   text-align: center;
 }
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.projects {
+  border: 3px solid #7c7f93;
+  background: #9ca0b0;
+  text-align: center;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects img {
+  width: 20vw;
+}
+
+.projects input {
+  font-size: 16pt;
+  padding: 1vh 1vw;
+  background-color: #7c7f93;
+  border: 1px solid #9ca0b0;
+  color: #eff1f5;
+}
