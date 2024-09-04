@@ -169,7 +169,8 @@ footer img {
   flex-wrap: wrap;
   justify-content: center;
   padding: 5vh 5vw;
-  align-self: center;
+  align-self: flex-end;
+  align-content: flex-end;
 }
 
 .skill-container img {
@@ -178,7 +179,7 @@ footer img {
 }
 
 .lang-container {
-  align-self: center;
+  align-self: flex-end;
   text-align: center;
 }
 
