@@ -180,6 +180,7 @@ footer img {
   margin-bottom: 3em;
   align-self: flex-end;
   align-content: flex-end;
+  width: 90vw;
 }
 
 .skill-container img {
