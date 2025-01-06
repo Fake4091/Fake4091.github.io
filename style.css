@@ -79,9 +79,9 @@ footer {
   height: 10vh;
   overflow: hidden;
   width: 103vw;
-  position: relative;
+  position: absolute;
   left: -1vw;
-  bottom: 0vh;
+  bottom: -2vh;
   text-align: center;
   z-index: 90000;
   display: flex;
@@ -164,6 +164,7 @@ footer img {
   background: #9ca0b0;
   padding: 0.5vh 2vw;
   margin: 5vh 10vw;
+  margin-bottom: 5em;
   color: #eff1f5;
 }
 
@@ -177,10 +178,10 @@ footer img {
   padding: 5vh 1em;
   margin: auto;
   margin-top: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   align-self: flex-end;
   align-content: flex-end;
-  width: 90vw;
+  max-width: 90vw;
 }
 
 .skill-container img {
@@ -197,6 +198,7 @@ footer img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5em;
   width: 100vw;
 }
 
