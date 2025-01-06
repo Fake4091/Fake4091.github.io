@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  width: 101vw;
+  position: relative;
+  left: -1vw;
 }
 
 nav {
@@ -35,7 +39,7 @@ nav a {
 }
 
 nav a:link {
-  color: #eff1f5;
+  color: #dc8a78;
 }
 
 nav a:hover {
@@ -74,10 +78,10 @@ footer {
   background-color: #9ca0b0;
   height: 10vh;
   overflow: hidden;
-  width: 101vw;
+  width: 103vw;
   position: relative;
   left: -1vw;
-  bottom: -2vh;
+  bottom: 0vh;
   text-align: center;
   z-index: 90000;
   display: flex;
@@ -142,6 +146,8 @@ footer img {
   border: 3px solid #7c7f93;
   background: #9ca0b0;
   margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
   padding: 15px 10px;
   width: 26vw;
   display: flex;
@@ -169,6 +175,8 @@ footer img {
   flex-wrap: wrap;
   justify-content: center;
   padding: 5vh 5vw;
+  margin-top: 1em;
+  margin-bottom: 3em;
   align-self: flex-end;
   align-content: flex-end;
 }
@@ -198,16 +206,25 @@ footer img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 3vh 3vw;
 }
 
 .projects img {
   width: 20vw;
 }
 
-.projects input {
+.projects button {
   font-size: 16pt;
   padding: 1vh 1vw;
   background-color: #7c7f93;
   border: 1px solid #9ca0b0;
   color: #eff1f5;
+}
+
+.demo-video {
+  padding-top: 0.3em;
+}
+
+.github {
+  padding-bottom: 0.3em;
 }
