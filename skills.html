@@ -7,23 +7,52 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="icon" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="static/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="static/js/script.js"></script>
   </head>
   <body class="skill-body">
     <div class="nav-container">
       <nav class="navbar" id="top-nav-bar">
-        <a href="index.html"
-          ><h4><em>Aidan Swendsen</em></h4></a
-        >
-        <a class="projects-link" href="projects.html">Projects</a>
-        <a class="skills" href="skills.html">Skills</a>
-        <a
-          class="resume"
-          href="data/Aidan_Swendsen_Resume_v2.pdf"
-          target="_blank"
-        >
-          Resume
-        </a>
+        <div class="nav-row1">
+          <a href="index.html"
+            ><h4><em>Aidan Swendsen</em></h4></a
+          >
+          <a class="non-dropdown projects-link" href="projects.html"
+            >Projects</a
+          >
+          <a class="non-dropdown skills" href="skills.html">Skills</a>
+          <a class="non-dropdown certs" href="certs.html">Certifications</a>
+          <a
+            class="non-dropdown resume"
+            href="static/data/Aidan_Swendsen_Resume_v2.pdf"
+            target="_blank"
+          >
+            Resume
+          </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="nav-row2">
+          <div class="dropdown" id="dropdown">
+            <a class="projects-link" href="projects.html">Projects</a> <br />
+            <a class="skills" href="skills.html">Skills</a> <br />
+            <a class="certs" href="certs.html">Certifications</a> <br />
+            <a
+              class="resume"
+              href="static/data/Aidan_Swendsen_Resume_v2.pdf"
+              target="_blank"
+            >
+              Resume
+            </a>
+            <br />
+          </div>
+        </div>
       </nav>
     </div>
     <div class="header">
@@ -33,7 +62,7 @@
     <div class="skill-container">
       <div class="lang-container csharp-container">
         <img
-          src="images/CSharp.png"
+          src="static/images/CSharp.png"
           alt="The Csharp logo in black and white"
           title="C#"
         />
@@ -41,7 +70,7 @@
       </div>
       <div class="lang-container html-container">
         <img
-          src="images/html.png"
+          src="static/images/html.png"
           alt="The HTML logo in black and white"
           title="HTML5"
         />
@@ -49,7 +78,7 @@
       </div>
       <div class="lang-container css-container">
         <img
-          src="images/css.png"
+          src="static/images/css.png"
           alt="The CSS logo in black and white"
           title="CSS3"
         />
@@ -57,7 +86,7 @@
       </div>
       <div class="lang-container javascript-container">
         <img
-          src="images/javascript.png"
+          src="static/images/javascript.png"
           alt="The JavaScript logo in black and white"
           title="JavaScript"
         />
@@ -65,7 +94,7 @@
       </div>
       <div class="lang-container java-container">
         <img
-          src="images/java.png"
+          src="static/images/java.png"
           alt="The Java logo in black and white"
           title="Java"
         />
@@ -73,7 +102,7 @@
       </div>
       <div class="lang-container python-container">
         <img
-          src="images/python.png"
+          src="static/images/python.png"
           alt="The Python logo in black and white"
           title="Python"
         />
@@ -81,7 +110,7 @@
       </div>
       <div class="lang-container sql-container">
         <img
-          src="images/sql.png"
+          src="static/images/sql.png"
           alt="The SQL logo in black and white"
           title="SQL"
         />
@@ -89,7 +118,7 @@
       </div>
       <div class="lang-container git-container">
         <img
-          src="images/git.png"
+          src="static/images/git.png"
           alt="The Git logo in black and white"
           title="Git"
         />
@@ -97,7 +126,7 @@
       </div>
       <div class="lang-container django-container">
         <img
-          src="images/django.svg"
+          src="static/images/django.svg"
           alt="The Django logo in black and white"
           title="Django"
         />
@@ -105,7 +134,7 @@
       </div>
       <div class="lang-container spring-container">
         <img
-          src="images/Spring.png"
+          src="static/images/Spring.png"
           alt="The Spring logo in black and white"
           title="Spring"
         />
@@ -117,13 +146,17 @@
         <i class="material-icons">mail</i>
       </a>
       <a href="https://github.com/Fake4091" target="_blank">
-        <img src="images/github-mark-white.svg" alt="Github logo" />
+        <img src="static/images/github-mark-white.svg" alt="Github logo" />
       </a>
       <a
         href="https://www.linkedin.com/in/aidan-swendsen-982824267"
         target="_blank"
       >
-        <img src="images/linkedin.svg" alt="LinkedIn logo" target="_blank" />
+        <img
+          src="static/images/linkedin.svg"
+          alt="LinkedIn logo"
+          target="_blank"
+        />
       </a>
     </footer>
   </body>

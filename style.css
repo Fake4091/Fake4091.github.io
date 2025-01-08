@@ -10,9 +10,14 @@ body {
   left: -1vw;
 }
 
+.nav-row1 {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+
 nav {
   overflow: hidden;
-  display: block;
   opacity: 0.9;
   position: fixed;
   top: 0;
@@ -21,56 +26,67 @@ nav {
   z-index: 100000;
   display: flex;
   left: 0;
-  justify-content: space-around;
   width: 100vw;
 }
 
-nav * {
+nav *,
+.dropdown * {
   background-color: #7c7f93;
   font-weight: 900;
 }
 
-nav h4 {
+nav h4,
+.dropdown h4 {
   margin: 0;
 }
 
-nav a {
+nav a,
+.dropdown a {
   text-decoration: none;
 }
 
-nav a:link {
+nav a:link,
+.dropdown a:link {
   color: #dc8a78;
 }
 
-nav a:hover {
+nav a:hover,
+.dropdown a:hover {
   color: #7287fd;
 }
 
-nav a:visited {
+nav a:visited,
+.dropdown a:visited {
   color: #dc8a78;
 }
 
-nav a:visited:hover {
+nav a:visited:hover,
+.dropdown a:visited:hover {
   color: #7287fd;
 }
 
-nav a h4 {
+nav a h4,
+.dropdown a h4 {
   color: #dc8a78;
 }
 
-nav a:link h4 {
+nav a:link h4,
+.dropdown a:link h4 {
   color: #dc8a78;
 }
 
-nav a:hover h4 {
+nav a:hover h4,
+.dropdown a:hover h4 {
   color: #dc8a78;
 }
 
-nav a:visited h4 {
+nav a:visited h4,
+.dropdown a:visited h4 {
   color: #dc8a78;
 }
 
-nav a:visited:hover h4 {
+nav a:visited:hover h4,
+.dropdown a:visited:hover h4 {
   color: #dc8a78;
 }
 
@@ -112,6 +128,10 @@ footer a:visited:hover {
 
 footer img {
   height: 4vh;
+}
+
+.dropdown {
+  display: none;
 }
 
 .header {
@@ -166,6 +186,212 @@ footer img {
   margin: 5vh 10vw;
   margin-bottom: 5em;
   color: #eff1f5;
+}
+.certs-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3em;
+  width: 100vw;
+  height: 45vh;
+}
+
+.cert-container {
+  border: 3px solid #7c7f93;
+  background: #9ca0b0;
+  margin: 0 1vw;
+  padding: 3em;
+  width: 30vw;
+  height: max-content;
+}
+
+.cert-container img {
+  display: none;
+}
+
+.icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    overflow: hidden;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    padding: 2vh 2vw;
+    background-color: #7c7f93;
+    z-index: 100000;
+    display: flex;
+    flex-wrap: wrap;
+    left: 0;
+    justify-content: space-around;
+    width: 100vw;
+  }
+
+  nav *,
+  .dropdown * {
+    background-color: #7c7f93;
+    font-weight: 900;
+  }
+
+  nav h4,
+  .dropdown h4 {
+    margin: 0;
+  }
+
+  nav a,
+  .dropdown a {
+    text-decoration: none;
+  }
+
+  nav a:link,
+  .dropdown a:link {
+    color: #dc8a78;
+  }
+
+  nav a:hover,
+  .dropdown a:hover {
+    color: #7287fd;
+  }
+
+  nav a:visited,
+  .dropdown a:visited {
+    color: #dc8a78;
+  }
+
+  nav a:visited:hover,
+  .dropdown a:visited:hover {
+    color: #7287fd;
+  }
+
+  nav a h4,
+  .dropdown a h4 {
+    color: #dc8a78;
+  }
+
+  nav a:link h4,
+  .dropdown a:link h4 {
+    color: #dc8a78;
+  }
+
+  nav a:hover h4,
+  .dropdown a:hover h4 {
+    color: #dc8a78;
+  }
+
+  nav a:visited h4,
+  .dropdown a:visited h4 {
+    color: #dc8a78;
+  }
+
+  nav a:visited:hover h4,
+  .dropdown a:visited:hover h4 {
+    color: #dc8a78;
+  }
+
+  footer {
+    background-color: #9ca0b0;
+    height: 10vh;
+    overflow: hidden;
+    width: 103vw;
+    position: absolute;
+    left: -1vw;
+    bottom: -2vh;
+    text-align: center;
+    z-index: 90000;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer a {
+    padding-top: 3vh;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  footer a:link {
+    color: #ffffff;
+  }
+
+  footer a:hover {
+    color: #ffffff;
+  }
+
+  footer a:visited {
+    color: #ffffff;
+  }
+
+  footer a:visited:hover {
+    color: #ffffff;
+  }
+
+  footer img {
+    height: 4vh;
+  }
+
+  .non-dropdown {
+    display: none;
+  }
+
+  .dropdown {
+    overflow: hidden;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .header {
+    max-height: 10em;
+    padding-top: 3vh;
+    overflow: hidden;
+    width: 101vw;
+    position: relative;
+    top: -5px;
+    left: -8px;
+    text-align: center;
+    background-color: #9ca0b0;
+    margin-bottom: 2vh;
+  }
+
+  .header h1 {
+    font-size: 20pt;
+  }
+
+  .header h2 {
+    font-size: 15pt;
+  }
+
+  .certs-container {
+    width: 90vw;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cert-container {
+    flex-direction: row;
+    padding-bottom: 0;
+    margin: 1em 0;
+  }
+
+  .last {
+    margin-bottom: 10em;
+  }
+
+  .cert-container object {
+    display: none;
+  }
+
+  .cert-desc {
+    display: none;
+  }
+
+  .cert-container img {
+    display: block;
+    height: 100px;
+  }
 }
 
 .skill-container {

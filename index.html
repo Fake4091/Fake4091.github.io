@@ -7,23 +7,52 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="icon" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="static/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="static/js/script.js"></script>
   </head>
   <body>
     <div class="nav-container">
       <nav class="navbar" id="top-nav-bar">
-        <a href="index.html"
-          ><h4><em>Aidan Swendsen</em></h4></a
-        >
-        <a class="projects-link" href="projects.html">Projects</a>
-        <a class="skills" href="skills.html">Skills</a>
-        <a
-          class="resume"
-          href="data/Aidan_Swendsen_Resume_v2.pdf"
-          target="_blank"
-        >
-          Resume
-        </a>
+        <div class="nav-row1">
+          <a href="index.html"
+            ><h4><em>Aidan Swendsen</em></h4></a
+          >
+          <a class="non-dropdown projects-link" href="projects.html"
+            >Projects</a
+          >
+          <a class="non-dropdown skills" href="skills.html">Skills</a>
+          <a class="non-dropdown certs" href="certs.html">Certifications</a>
+          <a
+            class="non-dropdown resume"
+            href="static/data/Aidan_Swendsen_Resume_v2.pdf"
+            target="_blank"
+          >
+            Resume
+          </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="nav-row2">
+          <div class="dropdown" id="dropdown">
+            <a class="projects-link" href="projects.html">Projects</a> <br />
+            <a class="skills" href="skills.html">Skills</a> <br />
+            <a class="certs" href="certs.html">Certifications</a> <br />
+            <a
+              class="resume"
+              href="static/data/Aidan_Swendsen_Resume_v2.pdf"
+              target="_blank"
+            >
+              Resume
+            </a>
+            <br />
+          </div>
+        </div>
       </nav>
     </div>
     <div class="header">
@@ -33,20 +62,21 @@
     <div class="frame">
       <img
         class="me-pic"
-        src="images/me.jpg"
+        src="static/images/me.jpg"
         alt="A picture of me standing in front of a blank white wall."
       />
     </div>
     <div class="about">
       <h2>About Me</h2>
       <p>
-        I'm Aidan, a student at Base Camp Coding Academy and a lover of most
-        coding things. I've been interested in coding for as long as I remember,
-        and I've pursued it as a hobby for just about as long. My interest
-        started as an interest strictly in game development, which I have
-        persued a little, but since then it has widened into most coding related
-        things. I find that, while the base interest in games remains, I also
-        like coding apps, so I'd like to go into either app or game development.
+        I'm Aidan, a student at Base Camp Coding Academy. I like watching
+        Youtube, more specifically comedy, gaming, music, and tech videos. I
+        also like to spend my time playing games, tabletop and video games alike
+        with friends. In particular, I like Dungeons and Dragons, Marvel Rivals,
+        and A Hat in Time. I've also been interested in coding for as long as I
+        can remember, and I've always been passionate about learning new things.
+        I'd like to go into a career in which my work will have finished
+        products that will keep me motivated.
       </p>
     </div>
     <footer>
@@ -54,13 +84,17 @@
         <i class="material-icons">mail</i>
       </a>
       <a href="https://github.com/Fake4091" target="_blank">
-        <img src="images/github-mark-white.svg" alt="Github logo" />
+        <img src="static/images/github-mark-white.svg" alt="Github logo" />
       </a>
       <a
         href="https://www.linkedin.com/in/aidan-swendsen-982824267"
         target="_blank"
       >
-        <img src="images/linkedin.svg" alt="LinkedIn logo" target="_blank" />
+        <img
+          src="static/images/linkedin.svg"
+          alt="LinkedIn logo"
+          target="_blank"
+        />
       </a>
     </footer>
   </body>
