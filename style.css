@@ -1,3 +1,7 @@
+* {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #eff1f5;
   color: #4c4f69;
@@ -6,8 +10,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 101vw;
-  position: relative;
-  left: -1vw;
+  position: absolute;
+  left: -0.5em;
 }
 
 .nav-row1 {
@@ -213,6 +217,79 @@ footer img {
   display: none;
 }
 
+.skill-container {
+  border: 3px solid #7c7f93;
+  background: #9ca0b0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5vh 1em;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  align-self: flex-end;
+  align-content: flex-end;
+  max-width: 90vw;
+}
+
+.skill-container img {
+  width: 15vw;
+  padding: 1vh 1vw;
+}
+
+.lang-container {
+  align-self: flex-end;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+  width: 100vw;
+}
+
+.projects {
+  border: 3px solid #7c7f93;
+  background: #9ca0b0;
+  text-align: center;
+  min-width: 30vw;
+  max-width: 35vw;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vh 3vw;
+}
+
+.projects img {
+  width: 20vw;
+}
+
+.projects button {
+  font-size: 16pt;
+  padding: 1vh 1vw;
+  background-color: #7c7f93;
+  border: 1px solid #9ca0b0;
+  color: #eff1f5;
+}
+
+.projects h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.demo-video {
+  padding-top: 0.3em;
+}
+
+.github {
+  padding-bottom: 0.3em;
+}
+
 @media only screen and (max-width: 600px) {
   nav {
     overflow: hidden;
@@ -392,69 +469,37 @@ footer img {
     display: block;
     height: 100px;
   }
-}
 
-.skill-container {
-  border: 3px solid #7c7f93;
-  background: #9ca0b0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 5vh 1em;
-  margin: auto;
-  margin-top: 1em;
-  margin-bottom: 5em;
-  align-self: flex-end;
-  align-content: flex-end;
-  max-width: 90vw;
-}
+  .projects {
+    max-width: 95vw;
+  }
 
-.skill-container img {
-  width: 15vw;
-  padding: 1vh 1vw;
-}
+  .lang-container {
+    padding: 0 1em;
+  }
 
-.lang-container {
-  align-self: flex-end;
-  text-align: center;
-}
+  .skill-container {
+    max-width: 80vw;
+  }
 
-.projects-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5em;
-  width: 100vw;
-}
+  .frame {
+    width: 75vw;
+  }
 
-.projects {
-  border: 3px solid #7c7f93;
-  background: #9ca0b0;
-  text-align: center;
-  width: 35vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3vh 3vw;
-}
+  .me-pic {
+    width: 70vw;
+    margin: auto;
+  }
 
-.projects img {
-  width: 20vw;
-}
+  .certs-container {
+    width: 100vw;
+  }
 
-.projects button {
-  font-size: 16pt;
-  padding: 1vh 1vw;
-  background-color: #7c7f93;
-  border: 1px solid #9ca0b0;
-  color: #eff1f5;
-}
-
-.demo-video {
-  padding-top: 0.3em;
-}
-
-.github {
-  padding-bottom: 0.3em;
+  .cert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+  }
 }
